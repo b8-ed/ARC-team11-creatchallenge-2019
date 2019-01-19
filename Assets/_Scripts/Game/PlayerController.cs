@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public bool canWin = false;
+    public bool GodMode = false;
+    public bool CanWin = false;
+    public bool IsDead = false;
+
     public GameObject MainCamera;
     public GameUIController GameUI;
+
+    //0 win, 1, 2 hurt, 3 jump
+    public AudioClip[] SfxClips;
 
     [SerializeField]
     private int HP;
     [SerializeField]
     private int MaxHP;
+    [SerializeField]
+    private SpriteRenderer playerSprite;
 
     private bool canRecieveDamage = true;
 
     private Animator playerAnim;
-    
+    private AudioSource playerAudio;
+
+    public void PlaySound(AudioClip _sfx)
+    {
+        playerAudio.clip = _sfx;
+        playerAudio.Play();
+    }
+
     public void SetHP(int _hp)
     {
         HP = _hp;
@@ -30,8 +45,10 @@ public class PlayerController : MonoBehaviour {
     //FUNCTION THAT SUBSTRACT THE PLAYERS HEALTH
     public void DamagePlayer(int _damage)
     {
-        if (!canRecieveDamage)
+        if (!canRecieveDamage || GodMode)
             return;
+
+        PlaySound(SfxClips[Random.Range(1, 2)]);
 
         HP -= _damage;
 
@@ -55,30 +72,39 @@ public class PlayerController : MonoBehaviour {
     //STOPS GAME LOOP AND RENDERS GAME OVER SCREEN
     public void Dead()
     {
+        if (IsDead)
+            return;
+        PlaySound(SfxClips[Random.Range(1, 2)]);
+        GameUI.GameOverPanel.SetActive(true);
         playerAnim.SetTrigger("Dead");
-        //GetComponent<UnityStandardAssets._2D.Platformer2DUserControl>().enabled = false;
-        //GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().enabled = false;
+        IsDead = true;
         GameManager.Instance.isGameRunning = false;
     }
 
     IEnumerator WaitForDamage()
     {
-        yield return new WaitForSeconds(0.4f);
+        playerSprite.material.color = Color.red;
+        yield return new WaitForSeconds(0.6f);
+        playerSprite.material.color = Color.white;
+
         canRecieveDamage = true;
     }
+
+    public void MakePlayerInvincible()
+    {
+        playerSprite.material.color = Color.yellow;
+        GodMode = true;
+    }
+
     #region UNITY FUNCTIONS
     void Start ()
     {
+        GameUI = FindObjectOfType<GameUIController>();
+        MainCamera = Camera.main.gameObject;
         playerAnim = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
 	}
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.E) && canWin)
-        {
-            GameManager.Instance.PlayerWins();
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -92,7 +118,8 @@ public class PlayerController : MonoBehaviour {
         if (other.CompareTag("Goal"))
         {
             print("PLEASE PRESS E");
-            canWin = true;
+            GameManager.Instance.PlayerWins();
+            PlaySound(SfxClips[0]);
         }
 
         if (other.CompareTag("Hazard"))
@@ -104,7 +131,8 @@ public class PlayerController : MonoBehaviour {
         if (other.CompareTag("Goal"))
         {
             print("PLEASE GET BACK");
-            canWin = false;
+            CanWin = false;
+            other.GetComponent<GoalBehaviour>().canWin = false;
         }
     }
     #endregion

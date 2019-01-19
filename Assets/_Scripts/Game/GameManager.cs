@@ -31,17 +31,12 @@ public class GameManager : MonoBehaviour {
     public void PlayerWins()
     {
         isGameRunning = false;
+        FindObjectOfType<GameUIController>().GameWinPanel.SetActive(true);
         Debug.Log("I WIN");
     }
 
-    // Use this for initialization
     void Start ()
     {
         isGameRunning = true;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

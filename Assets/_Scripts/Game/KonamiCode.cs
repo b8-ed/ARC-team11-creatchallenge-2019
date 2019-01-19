@@ -185,10 +185,12 @@ public class KonamiCode : MonoBehaviour
             {
                 Debug.Log(codeName);
                 //SceneManager.LoadScene("MiniGame");
+                GetComponent<PlayerController>().MakePlayerInvincible();
                 if (this.receiver != null)
                 {
                     //this.receiver.SendMessage(this.message, SendMessageOptions.DontRequireReceiver);
                     //SceneManager.LoadScene("MiniGame");
+                    
                     print("I AM KONAMI CODE");
                 }
 

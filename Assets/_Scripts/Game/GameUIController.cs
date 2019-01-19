@@ -7,7 +7,20 @@ public class GameUIController : MonoBehaviour {
 
     public Image[] HP;
 
-    public PlayerController Player; 
+    public PlayerController Player;
+
+    public GameObject GameOverPanel;
+    public GameObject GameWinPanel;
+
+    public void OnRetryClicked()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+    }
+
+    public void OnBackClicked()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
+    }
 
     //RENDERS THE HP SPRITES ACCORDING TO THE PLAYERS HEALTH
     public void RenderPlayerHP()
@@ -24,17 +37,9 @@ public class GameUIController : MonoBehaviour {
     }
 	void Start ()
     {
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        GameOverPanel.SetActive(false);
+        GameWinPanel.SetActive(false);
         RenderPlayerHP();
-	}
-	
-	void Update ()
-    {
-
-        //TESTING DELETE WHEN DONE
-		//if(Input.GetKeyDown(KeyCode.Space))
-  //      {
-  //          Player.DamagePlayer(1);
-  //          RenderPlayerHP();
-  //      }
 	}
 }

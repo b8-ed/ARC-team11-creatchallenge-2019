@@ -16,6 +16,8 @@ public class CameraMovement : MonoBehaviour {
     void Update()
     {
         if (GameManager.Instance.isGameRunning)
-            mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y + Time.deltaTime * CameraSpeed, mainCamera.transform.position.z);
+            mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, 
+                                                        mainCamera.transform.position.y + Time.deltaTime * CameraSpeed, 
+                                                        mainCamera.transform.position.z);
 	}
 }

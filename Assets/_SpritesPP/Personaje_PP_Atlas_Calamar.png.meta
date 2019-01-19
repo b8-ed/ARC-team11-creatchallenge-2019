@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 2805e9159a50d1c4c806be25206c666a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Personaje_PP_Atlas_Calamar_0
+    21300002: Personaje_PP_Atlas_Calamar_1
+    21300004: Personaje_PP_Atlas_Calamar_2
+    21300006: Personaje_PP_Atlas_Calamar_3
+    21300008: Personaje_PP_Atlas_Calamar_4
+    21300010: Personaje_PP_Atlas_Calamar_5
+    21300012: Personaje_PP_Atlas_Calamar_6
+    21300014: Personaje_PP_Atlas_Calamar_7
+    21300016: Personaje_PP_Atlas_Calamar_8
+    21300018: Personaje_PP_Atlas_Calamar_9
+    21300020: Personaje_PP_Atlas_Calamar_10
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 74
+        height: 48
+      alignment: 9
+      pivot: {x: 0.49324325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6d486aa2b6075479420571a92a2b04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 288
+        width: 100
+        height: 118
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5042373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2a5225915a790488e27148849e37aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 270
+        width: 29
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bbc3ac2625d594c99ebda81691a9e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_3
+      rect:
+        serializedVersion: 2
+        x: 10.999999
+        y: 148
+        width: 70
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d2a48f1277e81419a903455f86d3de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_4
+      rect:
+        serializedVersion: 2
+        x: 96.00001
+        y: 219
+        width: 46.999992
+        height: 62
+      alignment: 9
+      pivot: {x: 0.4999999, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca36f7c8f8633a244a18402f07d25aa6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_5
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 186
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecfed35e1e00564c93f0d07e7a3ac9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_6
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 154
+        width: 27
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff716205bd3d42448d0572ef63ff95e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 155
+        width: 28
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ff3a1ddd9fc5c4fb15d42115b58d53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_8
+      rect:
+        serializedVersion: 2
+        x: 93.00001
+        y: 109
+        width: 70.99999
+        height: 31
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b9ef2a3d5328747a23981f7ced9174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_9
+      rect:
+        serializedVersion: 2
+        x: 7.499998
+        y: 48.499996
+        width: 68
+        height: 91
+      alignment: 9
+      pivot: {x: 0.4779412, y: 0.48351654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c77baa519c9234f9a787e5cfa1e959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje_PP_Atlas_Calamar_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4
+        width: 107
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5233645, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42999d84445fd8745895fc2b786a7b7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3875d8c189af7f94792c9ea59f6f25a0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 636835285840449894
+  assetBundleName: 
+  assetBundleVariant: 
