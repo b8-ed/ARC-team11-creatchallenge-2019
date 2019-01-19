@@ -10,7 +10,7 @@ public class CameraMovement : MonoBehaviour {
 
 	void Start ()
     {
-        mainCamera = Camera.main;
+        mainCamera = GetComponent<Camera>();
 	}
 
     void Update()

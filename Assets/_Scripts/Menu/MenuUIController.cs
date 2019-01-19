@@ -6,8 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class MenuUIController : MonoBehaviour
 {
+    public GameObject TitleScreen;
+    public GameObject LevelScreen;
+
+    public void Start()
+    {
+        TitleScreen.SetActive(true);
+        LevelScreen.SetActive(false);
+    }
+
     public void OnStartClicked()
     {
-        SceneManager.LoadScene("Game");
+        TitleScreen.SetActive(false);
+        LevelScreen.SetActive(true);
+    }
+
+    public void OnLoadLevelClicked(string _levelName)
+    {
+        SceneManager.LoadScene(_levelName);
+    }
+
+    public void OnExitClicked()
+    {
+        Application.Quit();
     }
 }

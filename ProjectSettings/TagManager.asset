@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Water
   - Goal
+  - Hazard
   layers:
   - Default
   - TransparentFX
